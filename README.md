@@ -1,4 +1,4 @@
-# 👋Boilerplate React + TypeScript + Vite
+# 👋Exercises for Everyone project
 
 <p>
   <a href="emptylink docs" target="_blank">
@@ -9,7 +9,7 @@
 <details>
 <summary><strong>Table of Contents:</strong></summary>
 
-- [👋Boilerplate React + TypeScript + Vite](#boilerplate-react--typescript--vite)
+- [👋Exercises for Everyone project](#exercises-for-everyone-project)
   - [About this project](#about-this-project)
     - [Challenges](#challenges)
     - [Features](#features)
@@ -119,13 +119,13 @@
 1. Clone this respository
 
    ``` powershell
-   git clone https://github.com/ngkhang/boilerplate-react-vite-ts.git
+   git clone https://github.com/ngkhang/exercises-for-everyone.git
    ```
 
 2. Change to the project directory
 
    ``` powershell
-   cd boilerplate-vite-react-ts
+   cd exercises-for-everyone
    ```
 
 3. Install the dependencies:

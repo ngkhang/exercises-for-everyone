@@ -1,6 +1,12 @@
+import HeroSection from '~/components/generic/Hero';
+
 function HomePage() {
   return (
-    <div>HomePage</div>
+    <div>
+      <HeroSection />
+      {/* <Search /> */}
+      {/* <ExerciseList /> */}
+    </div>
   );
 }
 

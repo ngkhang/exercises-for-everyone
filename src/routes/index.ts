@@ -1,10 +1,15 @@
-// import PAGE_NAME from "";
+import HomePage from '~/pages/Home';
 
 const PublicRoutes = [
   {
     id: 1,
     path: '/',
-    // component: PAGE_NAME,
+    component: HomePage,
+  },
+  {
+    id: 2,
+    path: '/exercises',
+    component: HomePage,
   },
 ];
 
