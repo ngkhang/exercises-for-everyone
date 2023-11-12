@@ -3,14 +3,14 @@ import Images from '~/utils/helpers/images';
 
 const data = [
   {
-    id: 2,
-    name: 'exercises',
-    url: '/exercises',
-  },
-  {
     id: 1,
     name: 'home',
     url: '/',
+  },
+  {
+    id: 2,
+    name: 'exercises',
+    url: '/exercises',
   },
 ];
 
