@@ -1,4 +1,6 @@
 import HomePage from '~/pages/Home';
+import ExercisesPage from '~/pages/Exercises';
+import DetailsPage from '~/pages/Details';
 
 const PublicRoutes = [
   {
@@ -8,8 +10,14 @@ const PublicRoutes = [
   },
   {
     id: 2,
-    path: '/exercises',
-    component: HomePage,
+    path: 'exercises',
+    component: ExercisesPage,
+  },
+  {
+    id: 3,
+    path: 'exercises/:idExercises',
+    component: DetailsPage,
+
   },
 ];
 

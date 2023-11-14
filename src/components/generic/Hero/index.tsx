@@ -14,7 +14,7 @@ function HeroSection() {
       <p className="mb-6">
         {data.description}
       </p>
-      <button type="button" className="bg-primary text-stone-100 py-2 px-6 rounded">Explore Exercises</button>
+      <a href="#mainHome" className="bg-primary text-stone-100 py-2 px-6 rounded">Explore Exercises</a>
       {/* <span className="">Exercise</span> */}
     </div>
   );
