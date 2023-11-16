@@ -1,4 +1,4 @@
-const data = {
+const dataPage = {
   subTitle: 'Exercises for Everyone',
   title: 'Made with ❤️ by ngkhang',
   description: 'Check out the most effective exercises personalized to you',
@@ -6,9 +6,9 @@ const data = {
 
 function Footer() {
   return (
-    <div className="bg-[#fafafa] py-6 text-center">
-      <p className="font-semibold mb-2">{data.subTitle}</p>
-      <p className="text-base">{data.title}</p>
+    <div className="bg-[#fafafa] mt-auto py-4 md:py-6 text-center">
+      <p className="font-semibold md:text-lg lg:text-2xl mb-2">{dataPage.subTitle}</p>
+      <p className="text-sm lg:text-base italic">{dataPage.title}</p>
     </div>
   );
 }

@@ -1,15 +1,15 @@
-import Banner from '/assets/images/banner.png';
-import Logo from '/assets/images/logo.png';
-import BodyPart from '/assets/icons/body-part.png';
-import Target from '/assets/icons/target.png';
-import Equipment from '/assets/icons/equipment.png';
+import LOGO from '/assets/images/logo.png';
+import BANNER from '/assets/images/banner.png';
+import BODYPART from '/assets/icons/bodyPart.png';
+import TARGET from '/assets/icons/target.png';
+import EQUIPMENT from '/assets/icons/equipment.png';
 
 const Images = {
-  Logo,
-  Banner,
-  BodyPart,
-  Equipment,
-  Target,
+  LOGO,
+  BANNER,
+  BODYPART,
+  EQUIPMENT,
+  TARGET,
 };
 
 export default Images;

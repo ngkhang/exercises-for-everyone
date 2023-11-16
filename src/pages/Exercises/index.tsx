@@ -10,14 +10,14 @@ const data = {
 
 function Exercises() {
   return (
-    <div>
+    <div className="w-full">
       <div className="bg-[#fffafb] py-6 px-4">
         <h1 className="font-bold text-3xl leading-10 mb-10 text-center">{data.title}</h1>
         <Search bodyPartList={bodyPartList} />
       </div>
-      <div className="">
+      <div className="mx-6">
         <h2 className="font-bold mb-8 text-2xl">All Exercises for Everyone</h2>
-        <div className="flex flex-wrap mx-6">
+        <div className="flex flex-wrap mx-8">
           {
             listData.map((exercise) => (
               <Card exercise={exercise} key={exercise.id} />

@@ -1,7 +1,7 @@
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import Images from '~/utils/helpers/images';
 
-const data = [
+const dataPage = [
   {
     id: 1,
     name: 'home',
@@ -16,18 +16,18 @@ const data = [
 
 function Navigation() {
   return (
-    <div>
-      <div className="flex items-center px-4 py-4">
-        <div className="w-8 mr-4">
-          <img src={Images.Logo} alt="Logo" className="w-full" />
-        </div>
+    <div className="fixed z-40 bg-slate-100/90 w-full flex justify-center shadow-md lg:shadow-none">
+      <div className="w-full md:w-mid lg:w-large flex items-center px-4">
+        <Link to="/" className="w-8 lg:w-10 mr-4 inline-block">
+          <img src={Images.LOGO} alt="Logo" className="w-full" />
+        </Link>
         <div className="flex-grow">
           {
-            data.map((item) => (
+            dataPage.map((item) => (
               <NavLink
                 key={item.id}
                 to={item.url}
-                className="capitalize bg-white px-2 py-1 ml-4 text-base border-b-2 border-hidden"
+                className="capitalize px-2 py-2 lg:p-4 inline-block ml-4 text-base lg:text-lg border-b-2 md:border-b-[3px] border-hidden"
               >
                 {item.name}
               </NavLink>

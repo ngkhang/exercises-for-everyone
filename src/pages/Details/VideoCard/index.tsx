@@ -13,12 +13,12 @@ const formatViewCount = (str: string) => {
     ${text}`;
 };
 
-function VideoCard(Props: PropsVideo) {
-  const { className, video } = Props;
+function VideoCard({ video, className = 'w-full' }: PropsVideo) {
+  // const { className, video } = Props;
   return (
-    <div className={`bg-white mb-6 box-border shadow-2xl rounded-lg ${className}`}>
-      <div className="mb-2 rounded-t-lg overflow-hidden relative">
-        <img src={video.thumbnails[0].url} alt="" className="w-full object-fill rounded-t-lg hover:scale-110 transition-transform duration-200" />
+    <div className={`bg-white mb-6 box-border shadow-2xl rounded-lg rounded-tl-3xl ${className}`}>
+      <div className="mb-2 rounded-tl-3xl rounded-tr-lg overflow-hidden relative">
+        <img src={video.thumbnails[0].url} alt="" className="w-full object-fill hover:scale-110 transition-transform duration-200" />
         <span className="absolute right-0 bottom-0 bg-black/30 text-gray-200 px-2 text-xs mb-1 mr-1">{video.lengthText}</span>
       </div>
       <div className="px-3 pb-3">

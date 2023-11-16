@@ -4,9 +4,11 @@ import Navigation from '~/components/generic/Navigation';
 
 function DefaultLayout({ children }: { children: React.ReactElement }) {
   return (
-    <div className="">
+    <div className="h-screen flex flex-col">
       <Navigation />
-      {children}
+      <div className="flex-grow flex">
+        {children}
+      </div>
       <Footer />
     </div>
   );
