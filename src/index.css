@@ -3,5 +3,11 @@
 @tailwind utilities;
 
 .active {
-  @apply border-primary border-solid;
+  @apply border-primary border-solid font-semibold text-primary;
+}
+
+
+.swiper-button-next,
+.swiper-button-prev {
+  @apply text-blue-500
 }

@@ -12,18 +12,18 @@ function Card(Props : PropsCard) {
     <div className={`${className}`}>
       <div
         key={exercise.id}
-        className="bg-white border-t-4 border-primary p-4 box-border mb-7 shadow-md hover:shadow-2xl transition-shadow"
+        className="flex flex-col bg-slate-50 border-t-4 border-primary box-border shadow-lg hover:shadow-2xl transition-shadow p-4"
       >
-        <div className="p-2">
-          <Link to={`/exercises/${exercise.id}`}>
-            <img src={exercise.gifUrl} alt={exercise.name} className="w-full" />
-          </Link>
-        </div>
+        <Link className="inline-block mb-4" to={`/exercises/${exercise.id}`}>
+          <img src={exercise.gifUrl} alt={exercise.name} className="w-full h-full" />
+        </Link>
         <div className="capitalize">
-          <span className="bg-green-300 rounded-xl inline-block px-4 py-1 mr-2 text-xs">{exercise.bodyPart}</span>
-          <span className="bg-yellow-300 rounded-xl inline-block px-4 py-1 mr-2 text-xs">{exercise.target}</span>
+          <div className="mb-3 text-xs lg:text-base">
+            <span className="bg-green-300 rounded-xl inline-block px-3 mr-2">{exercise.bodyPart}</span>
+            <span className="bg-yellow-300 rounded-xl inline-block px-3">{exercise.target}</span>
+          </div>
+          <p className="font-bold lg:text-lg">{exercise.name}</p>
         </div>
-        <p className="font-bold my-2 capitalize">{exercise.name}</p>
       </div>
     </div>
   );

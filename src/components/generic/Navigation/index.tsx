@@ -27,7 +27,7 @@ function Navigation() {
               <NavLink
                 key={item.id}
                 to={item.url}
-                className="capitalize px-2 py-2 lg:p-4 inline-block ml-4 text-base lg:text-lg border-b-2 md:border-b-[3px] border-hidden"
+                className="capitalize px-2 py-2 lg:p-4 inline-block ml-4 text-sm lg:text-lg border-b-2 md:border-b-[3px] border-transparent"
               >
                 {item.name}
               </NavLink>
