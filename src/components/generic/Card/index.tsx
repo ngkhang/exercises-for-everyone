@@ -7,12 +7,11 @@ interface PropsCard {
 }
 
 function Card(Props : PropsCard) {
-  const { className = 'w-full', exercise } = Props;
+  const { className = '', exercise } = Props;
   return (
-    <div className={`${className}`}>
+    <div key={exercise.id} className={`w-full ${className}`}>
       <div
-        key={exercise.id}
-        className="flex flex-col bg-slate-50 border-t-4 border-primary box-border shadow-lg hover:shadow-2xl transition-shadow p-4"
+        className="flex flex-col bg-slate-50 border-t-4 border-primary box-border shadow-lg hover:shadow-2xl transition-shadow p-4 h-full"
       >
         <Link className="inline-block mb-4" to={`/exercises/${exercise.id}`}>
           <img src={exercise.gifUrl} alt={exercise.name} className="w-full h-full" />

@@ -27,7 +27,7 @@ function HomePage() {
       </div>
       <div className="flex justify-center">
         <div className="w-full md:w-mid lg:w-large">
-          <div className="mx-6  lg:mb-16">
+          <div className="mx-6 lg:mb-16">
             <h2 className="font-bold my-8 text-2xl lg:text-4xl lg:my-14">Showing Results</h2>
             <div className="flex flex-wrap mx-5 md:mx-0">
               {
